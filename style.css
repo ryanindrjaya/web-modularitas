@@ -1,0 +1,133 @@
+a {
+  text-decoration: none;
+}
+
+/* -------------NAVBAR-------------- */
+.navbar-toggler .dark-toggler {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(33,37,41, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* -------------NAVBAR-------------- */
+
+
+.banner-image {
+  background-image: url("img/banner-image.jpg");
+  background-size: cover;
+}
+
+/* ---------FILTER (product.php)-------- */
+.dropdown {
+  width: 100%;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 1px solid #9A9A9A;
+  padding-bottom: 8px;
+  transition: 0.2s;
+}
+
+.dropdown:focus {
+  border: none;
+  border-bottom: 3px solid black;
+}
+
+/* FOOTER */
+.footer-link > a {
+  color: white;
+  font-weight: bolder;
+  font-size: 2em;
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.footer-link {
+  transition: 0.5s;
+}
+
+.footer-link > a:hover {
+  color: black;
+}
+
+.footer-link:hover {
+  background-color: white;
+}
+
+li {
+  list-style: none;
+}
+
+/* Contact us */
+
+.submit-btn {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* SLIDER */
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat scroll center scroll;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.7;
+}
+
+.carousel-caption {
+  bottom: 18%;
+}
+
+.carousel-caption h5 {
+  text-align: left;
+  font-size: 70px;
+  font-weight: 700px;
+  margin-bottom: 30px;
+}
+
+.slider-btn .btn {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+}
